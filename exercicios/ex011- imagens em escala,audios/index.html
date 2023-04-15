@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medias em HTML5</title>
+</head>
+<body>
+    <h1>Imagens dinamicas</h1>
+    <p>tente abrir essa imagem em varios dispositivos diferentes ou simplesmente aumente e diminue a janela do seu navegador.</p>
+    <!--tag picture para adicionar diversos tamanhos e comando para as imagens-->
+    <picture>
+        <!--abaixo a tag source media dizendo para o nevegador que se passar de um determinado tamanho carregar a mesma imagem, so que de outro tamanho, ou seja quando abrir  a imagem em um celular sera diferente de quem abrir a imagem no pc(TAMANHO DIFERENTE!!)-->
+        <source media="(max-width:750px )" srcset="imagens/fotop.png" type="image/png">
+        <source media="(max-width:1000px )" srcset="imagens/fotom.png" type="image/png">
+    
+        <img src="imagens/fotog.png" alt="imagem flexivel">
+    </picture>
+    <h1>Reprodizindo Audios</h1>
+    <p>Vamos aprender a reproduzir audios em html5</p>
+    <audio src="media/musica1.mp3" controls autoplay></audio>
+    <!--MP3 WAV OGG(tipos de audios)-->
+    <H2>Outra forma de colocar audio em html5</H2>
+    <!-- preload diz para o navegador como que o audio devera ser carregado, auto-ira carregar o audio junto com a pagina,se o audio for muito grande sera um pessimo negocio para o site//metadata- O autor pensa que o navegador deve carregar apenas metadados quando a página carrega//none- O autor acha que o navegador NÃO deve carregar o áudio quando a página carregar-->
+    <audio preload="metadata" autoplay controls ><!--controls para adicionar o botao de play,audio etc(diferente depedendo do navegador utilizado pelo usuario)-->
+        <source src="media/musica2.mp3" type="audio/mpeg"><!--type dependendo do tipo do arquivo(se nao soube exatamente pesquisar)-->
+        <source src="media/musica2.ogg" type="audio/ogg">
+        <source src="media/musica2.wav" type="audio/wav">
+        <p>infelizmente seu navegador nao consegue reproduzir esse audio <a href="media/musica2.mp3">Clique aqui para baixar</a></p>
+    </audio>
+</body>
+</html>

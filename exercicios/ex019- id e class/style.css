@@ -1,0 +1,42 @@
+@charset "UTF-8";
+/*
+ id no html é igual  a # no css
+ class no html é igual a . ( ponto) no css
+
+ podemos tambem colocar duas classes no mesmo elento basta colocar as duas classes seguidamente sem separação por virgula
+
+ ex: <h2 class="avancado destaque">
+*/
+body{
+    background-color: rgb(212, 179, 243);
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1{
+    color: rgb(53, 31, 74);
+}
+
+h1#principal{
+    background-color:rgb(53, 31, 74);
+    color: white;
+    text-align: center;
+}
+
+h2{
+  color: rgb(50, 85, 123);
+}
+
+.basico{
+    color: rgb(87, 50, 123);
+}
+
+.intermediario{
+    color: rgb(129, 132, 42);
+}
+
+.avancado{
+    color: rgb(123, 50, 50);
+}
+
+.destaque{
+   background-color:  rgba(146, 109, 180, 0.252);
+}

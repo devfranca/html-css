@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Videos com html5</title>
+</head>
+<body>
+    <h1>inserindo videos hospedados localmente</h1>
+    <p>este video esta hospedado no meu servidor.</p>
+
+        <!--tag video abaixo para colocar todos os tipos de videos, para tentar funcionar em qualquer tipo de navegador( A ORDEM DOS ARQUIVOS 
+            NO CONDIGO DIZ A ORDEM QUE O NAVEGADOR IRA TENTAR CARREGAR)-->
+    
+    <video controls width="560" poster="imagens/montanha.jpg" autoplay loop><!--poster serve para adicionar uma "thumb" no video ao atualizar ou entrar na pagina-->
+    <source src="media/meuvideo.mkv" type="video/mp4">
+    <source src="media/Meuvideo.webm" type="video/webm">
+    <source src="media/meuvideo.ogv"type="video/ogg">
+    <source src="media/meuvideo.mp4" type="video/mp4"><!-- colocar todos os tipos de videos para caso nao funcione em um navegador,ja tem outro que funcione-->
+    <p>seu navegador nao tem compatibilidade com reprodução de videos.</p><!--caso nenhum tipo de reprodução acima funcione, escreva essa paragrafo na tela-->
+
+    </video>
+    <!-- PS: ao utilizar videos hospedados internamente o consumo de banda pode ser abusrdo depedendo de quantos usuarios acessam o site por dia, deixando a hospedagem bem cara para o cliente, caso ele queira assim mesmo, expllicar de forma clara esse processo-->
+    <h1>inserindo videos do youtube</h1>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/FdE5G95B7Mg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</body>
+</html>
