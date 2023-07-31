@@ -23,16 +23,34 @@
         padding: 10px;
 
     }
+    .nome{
+        background-color: coral;
+    }
+    .sexo{
+        background-color: darkslategray ;
+    }
+    .idade{
+        background-color: goldenrod;
+    }
+    .profissao{
+        background-color: lightslategrey;
+    }
 </style>
 <body>
+   
     <table>
+        <colgroup>
+            <col class="nome">
+            <col class="sexo">
+            <col class="idade">
+            <col class="profissao">
+        </colgroup> 
         <caption>cadastro</caption>
         <tr>
-            <th>Nome</th>
-            <th>Sexo
-            </th>
-            <th>Idade</th>
-            <th>Profissão</th>
+            <th scope="col">Nome</th>
+            <th scope="col">Sexo</th>
+            <th scope="col">Idade</th>
+            <th scope="col">Profissão</th>
         </tr>
         <tr><td>Ana maria</td>
             <td>F</td>
